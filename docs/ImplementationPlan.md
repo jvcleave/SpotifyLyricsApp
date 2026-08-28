@@ -61,7 +61,7 @@ The owner has recorded the synchronized-lyrics policy checkpoint as cleared. Thi
 
 ## Distribution and repository follow-up
 
-- [ ] Choose a remote repository for this new app. No remote is assumed or created.
+- [x] Configure the owner-provided remote: [jvcleave/SpotifyLyricsApp](https://github.com/jvcleave/SpotifyLyricsApp).
 - [ ] Replace development-only sibling paths with a portable shared package distribution strategy.
 - [ ] Keep package versions reproducible without duplicating implementations.
 - [ ] Review privacy, service terms, account quotas, and release requirements before distribution.

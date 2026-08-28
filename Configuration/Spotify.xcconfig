@@ -1,0 +1,4 @@
+// The Client ID is public configuration. Never add a Client Secret here.
+SPOTIFY_CLIENT_ID =
+SPOTIFY_LYRICS_DEMO = NO
+#include? "Spotify.local.xcconfig"

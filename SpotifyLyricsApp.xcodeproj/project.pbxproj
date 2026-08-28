@@ -1,0 +1,492 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A30000013041576C007E543F /* SpotifyKit in Frameworks */ = {isa = PBXBuildFile; productRef = A30000043041576C007E543F /* SpotifyKit */; };
+		B40000010000000000000001 /* SpotifyKit in Frameworks */ = {isa = PBXBuildFile; productRef = A30000043041576C007E543F /* SpotifyKit */; };
+		B40000010000000000000002 /* SpotifyLyricsApp/SpotifyLyricsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40000020000000000000002 /* SpotifyLyricsApp/SpotifyLyricsViewModel.swift */; };
+		B40000010000000000000004 /* SpotifyLyricsApp/SpotifyAppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40000020000000000000004 /* SpotifyLyricsApp/SpotifyAppConfiguration.swift */; };
+		C50000010000000000000001 /* LyricsKit in Frameworks */ = {isa = PBXBuildFile; productRef = C50000040000000000000001 /* LyricsKit */; };
+		C50000010000000000000002 /* LyricsKit in Frameworks */ = {isa = PBXBuildFile; productRef = C50000040000000000000001 /* LyricsKit */; };
+		C60000010000000000000001 /* LyricsViewModel in Sources */ = {isa = PBXBuildFile; fileRef = C60000020000000000000001; };
+		C60000010000000000000002 /* LyricsDisplay in Sources */ = {isa = PBXBuildFile; fileRef = C60000020000000000000002; };
+		C60000010000000000000003 /* SpotifyLyricsService in Sources */ = {isa = PBXBuildFile; fileRef = C60000020000000000000003; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		03ACF7AC3041576C007E543F /* SpotifyLyricsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpotifyLyricsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A30000053041576C007E543F /* Configuration/Spotify.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Configuration/Spotify.xcconfig; sourceTree = "<group>"; };
+		B40000020000000000000001 /* SpotifyLyricsAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = SpotifyLyricsAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B40000020000000000000002 /* SpotifyLyricsApp/SpotifyLyricsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyLyricsApp/SpotifyLyricsViewModel.swift; sourceTree = SOURCE_ROOT; };
+		B40000020000000000000004 /* SpotifyLyricsApp/SpotifyAppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyLyricsApp/SpotifyAppConfiguration.swift; sourceTree = SOURCE_ROOT; };
+		C60000020000000000000001 /* LyricsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyLyricsApp/LyricsViewModel.swift; sourceTree = SOURCE_ROOT; };
+		C60000020000000000000002 /* LyricsDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyLyricsApp/LyricsDisplay.swift; sourceTree = SOURCE_ROOT; };
+		C60000020000000000000003 /* SpotifyLyricsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyLyricsApp/SpotifyLyricsService.swift; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		03ACF7AE3041576C007E543F /* SpotifyLyricsApp */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = SpotifyLyricsApp;
+			sourceTree = "<group>";
+		};
+		B40000030000000000000001 /* SpotifyLyricsAppTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = SpotifyLyricsAppTests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		03ACF7A93041576C007E543F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A30000013041576C007E543F /* SpotifyKit in Frameworks */,
+				C50000010000000000000001 /* LyricsKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B40000040000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B40000010000000000000001 /* SpotifyKit in Frameworks */,
+				C50000010000000000000002 /* LyricsKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03ACF7A33041576C007E543F = {
+			isa = PBXGroup;
+			children = (
+				03ACF7AE3041576C007E543F /* SpotifyLyricsApp */,
+				B40000030000000000000001 /* SpotifyLyricsAppTests */,
+				B40000050000000000000001 /* Shared test sources */,
+				A30000053041576C007E543F /* Configuration/Spotify.xcconfig */,
+				03ACF7AD3041576C007E543F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		03ACF7AD3041576C007E543F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				03ACF7AC3041576C007E543F /* SpotifyLyricsApp.app */,
+				B40000020000000000000001 /* SpotifyLyricsAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B40000050000000000000001 /* Shared test sources */ = {
+			isa = PBXGroup;
+			children = (
+				B40000020000000000000002 /* SpotifyLyricsApp/SpotifyLyricsViewModel.swift */,
+				B40000020000000000000004 /* SpotifyLyricsApp/SpotifyAppConfiguration.swift */,
+				C60000020000000000000003 /* SpotifyLyricsService.swift */,
+				C60000020000000000000002 /* LyricsDisplay.swift */,
+				C60000020000000000000001 /* LyricsViewModel.swift */,
+			);
+			name = "Shared test sources";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		03ACF7AB3041576C007E543F /* SpotifyLyricsApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03ACF7B73041576D007E543F /* Build configuration list for PBXNativeTarget "SpotifyLyricsApp" */;
+			buildPhases = (
+				03ACF7A83041576C007E543F /* Sources */,
+				03ACF7A93041576C007E543F /* Frameworks */,
+				03ACF7AA3041576C007E543F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				03ACF7AE3041576C007E543F /* SpotifyLyricsApp */,
+			);
+			name = SpotifyLyricsApp;
+			packageProductDependencies = (
+				A30000043041576C007E543F /* SpotifyKit */,
+				C50000040000000000000001 /* LyricsKit */,
+			);
+			productName = SpotifyLyricsApp;
+			productReference = 03ACF7AC3041576C007E543F /* SpotifyLyricsApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B40000060000000000000001 /* SpotifyLyricsAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B40000070000000000000001 /* Build configuration list for PBXNativeTarget "SpotifyLyricsAppTests" */;
+			buildPhases = (
+				B40000040000000000000002 /* Sources */,
+				B40000040000000000000001 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				B40000030000000000000001 /* SpotifyLyricsAppTests */,
+			);
+			name = SpotifyLyricsAppTests;
+			packageProductDependencies = (
+				A30000043041576C007E543F /* SpotifyKit */,
+				C50000040000000000000001 /* LyricsKit */,
+			);
+			productName = SpotifyLyricsAppTests;
+			productReference = B40000020000000000000001 /* SpotifyLyricsAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		03ACF7A43041576C007E543F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2660;
+				LastUpgradeCheck = 2660;
+				TargetAttributes = {
+					03ACF7AB3041576C007E543F = {
+						CreatedOnToolsVersion = 26.6;
+					};
+				};
+			};
+			buildConfigurationList = 03ACF7A73041576C007E543F /* Build configuration list for PBXProject "SpotifyLyricsApp" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 03ACF7A33041576C007E543F;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				A30000033041576C007E543F /* XCLocalSwiftPackageReference "../SpotifyHelperApp/Packages/SpotifyKit" */,
+				C50000030000000000000001 /* LyricsKit package */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 03ACF7AD3041576C007E543F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B40000060000000000000001 /* SpotifyLyricsAppTests */,
+				03ACF7AB3041576C007E543F /* SpotifyLyricsApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		03ACF7AA3041576C007E543F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		03ACF7A83041576C007E543F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B40000040000000000000002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B40000010000000000000002 /* SpotifyLyricsApp/SpotifyLyricsViewModel.swift in Sources */,
+				B40000010000000000000004 /* SpotifyLyricsApp/SpotifyAppConfiguration.swift in Sources */,
+				C60000010000000000000003 /* SpotifyLyricsService in Sources */,
+				C60000010000000000000002 /* LyricsDisplay in Sources */,
+				C60000010000000000000001 /* LyricsViewModel in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		03ACF7B53041576D007E543F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 889HC48YMG;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		03ACF7B63041576D007E543F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 889HC48YMG;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		03ACF7B83041576D007E543F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A30000053041576C007E543F /* Configuration/Spotify.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 889HC48YMG;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_INCOMING_NETWORK_CONNECTIONS = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Configuration/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 15.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jvclabs.SpotifyLyricsApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = macosx;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = nonisolated;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		03ACF7B93041576D007E543F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A30000053041576C007E543F /* Configuration/Spotify.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 889HC48YMG;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_INCOMING_NETWORK_CONNECTIONS = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Configuration/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 15.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jvclabs.SpotifyLyricsApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = macosx;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = nonisolated;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		B40000080000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 889HC48YMG;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.6;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jvclabs.SpotifyLyricsAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = macosx;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = nonisolated;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		B40000080000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 889HC48YMG;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.6;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jvclabs.SpotifyLyricsAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = macosx;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = nonisolated;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		03ACF7A73041576C007E543F /* Build configuration list for PBXProject "SpotifyLyricsApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03ACF7B53041576D007E543F /* Debug */,
+				03ACF7B63041576D007E543F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03ACF7B73041576D007E543F /* Build configuration list for PBXNativeTarget "SpotifyLyricsApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03ACF7B83041576D007E543F /* Debug */,
+				03ACF7B93041576D007E543F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B40000070000000000000001 /* Build configuration list for PBXNativeTarget "SpotifyLyricsAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B40000080000000000000001 /* Debug */,
+				B40000080000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		A30000033041576C007E543F /* XCLocalSwiftPackageReference "../SpotifyHelperApp/Packages/SpotifyKit" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../SpotifyHelperApp/Packages/SpotifyKit;
+		};
+		C50000030000000000000001 /* LyricsKit package */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../LyricsApp/Packages/LyricsKit;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A30000043041576C007E543F /* SpotifyKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A30000033041576C007E543F /* XCLocalSwiftPackageReference "../SpotifyHelperApp/Packages/SpotifyKit" */;
+			productName = SpotifyKit;
+		};
+		C50000040000000000000001 /* LyricsKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C50000030000000000000001;
+			productName = LyricsKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 03ACF7A43041576C007E543F /* Project object */;
+}

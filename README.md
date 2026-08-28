@@ -1,5 +1,7 @@
 # SpotifyLyricsApp
 
+<img width="1470" height="1090" alt="image" src="https://github.com/user-attachments/assets/60e06700-e248-4d17-8b54-907f3f3d1ca4" />
+
 A macOS SwiftUI app that combines **SpotifyKit** and **LyricsKit**: connect Spotify, play a song there, and retrieve its lyrics from LRCLIB.
 
 This first milestone displays timed or plain lyrics, offers a chooser for ambiguous matches, and handles instrumental, unavailable, loading, and error states. It includes estimated playback position, but **timed-line highlighting and automatic scrolling are not implemented yet**.
